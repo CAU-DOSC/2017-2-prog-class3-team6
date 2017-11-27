@@ -38,3 +38,16 @@ void PrintNode(node* head)
 		nextnode = nextnode->next;
 	}
 }
+
+// 입력된 연결 리스트를 역순으로 출력
+void Print_Reverse(Link head, int count){
+	for( ; count != 0 ; count --){
+		Link cur = head;
+		for(int i=0 ; i < count - 1 ; i++)
+			cur = cur -> next;
+		printf("%4d", cur->value);
+	}
+	puts(" ");
+}
+
+

@@ -3,9 +3,9 @@
   이곳은 메인함수를 작성해주세요
   먼저 readme.txt를 읽어주세요
                                 */
-#include<stdio.h>
-#include<stdlib.h>
+
 #include"header.h"
+
 int main(){
 	node *head=NULL;
 	node *cur=NULL;
@@ -20,4 +20,5 @@ int main(){
 		head=AddNode(cur,head);
 	}
 	return 0;
+
 }
