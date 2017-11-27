@@ -42,12 +42,19 @@ void PrintNode(node* head)
 // 입력된 연결 리스트를 역순으로 출력
 void Print_Reverse(Link head, int count){
 	for( ; count != 0 ; count --){
-		Link cur = head;
+		Link current = head;
 		for(int i=0 ; i < count - 1 ; i++)
-			cur = cur -> next;
-		printf("%4d", cur->value);
+			current = current-> next;
+		printf("%4d", current->value);
 	}
 	puts(" ");
 }
 
+// 연결 리스트의 개수 구하기
+int Count_data(Link head) {
+	int count = 0;
+	for (Link current = head; current->next != NULL; count++)
+		current = current->next;
+	return count;
+}
 
