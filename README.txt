@@ -9,10 +9,12 @@ This text file describes brief but precise and complete specification of project
 Your description start form next line and do not delete lines upto this point.
 - - - - - - - - - - - - - - - - - - - -
 *만들 함수 내역*
+node에 값을 넣는 함수
 새로운 node를 추가하는 함수
-node를 역순으로 정렬하는 함수
-node를 출력하는 함수
-node를 제거하는 함수
+node를 역순으로 출력하는 함수
+중간값을 출력하는 함수
+node를 정순으로 출력하는 함수
+node를 홀수번째 삭제하는 함수
 
 이중 하나 골라서 만들어 주시면 됩니다.
 - - - - - - - - - - - - - - - - - - - - 
