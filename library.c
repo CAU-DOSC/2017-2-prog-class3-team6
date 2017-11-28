@@ -58,10 +58,10 @@ int Count_data(Link head) {
 	return count;
 }
 
+//중간값을 출력
 void Print_Mid(Link list_head, int count) {
 	int cnt = count/2;
-	
-	if(count%2 == 0)
+	if(count%2 == 1)
 	{
 		while(cnt>0)
 		{
@@ -72,7 +72,7 @@ void Print_Mid(Link list_head, int count) {
 	}
 	else
 	{
-		while(cnt>0)
+		while(cnt>1)
 		{
 			list_head = list_head->next;
 			cnt--;
@@ -82,6 +82,7 @@ void Print_Mid(Link list_head, int count) {
 		printf(", %d\n",list_head->value);
 	}
 }
+
 //remove the node
 void removenode(node *target)
 {
