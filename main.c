@@ -24,7 +24,7 @@ int main(){
 	Print_Mid(head, count);
 	PrintNode(head);
 	cur=head;
-	Delete_Rest(head, cur, count);
+	Delete_Odd(head, cur, count);
 	PrintNode(head);
 	return 0;
 }
