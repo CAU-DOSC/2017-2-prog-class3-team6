@@ -6,10 +6,10 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-typedef struct {
+ struct node {
 	int value;
         struct node *next;
-}node;
+};
 
 typedef struct node Node;
 typedef Node* Link;
@@ -21,4 +21,4 @@ void Print_Reverse(Link head, int count);
 int Count_data(Link head);
 void Print_Mid(Link list_head, int count);
 void removenode(node *target);
-void Delete_Rest(Link head, Link cur, int count);
+void Delete_Odd(Link head, Link cur, int count);

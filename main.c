@@ -19,6 +19,12 @@ int main(){
 		cur=CreatNode(data,&count);
 		head=AddNode(cur,head);
 	}
+	Count_data(head);
+	Print_Reverse(head, count);
+	Print_Mid(head, count);
+	PrintNode(head);
+	cur=head;
+	Delete_Odd(head, cur, count);
+	PrintNode(head);
 	return 0;
-
 }
