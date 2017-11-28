@@ -14,3 +14,11 @@ typedef struct {
 typedef struct node Node;
 typedef Node* Link;
 
+node *CreatNode(int *data,int *count);
+node *AddNode(node* cur,node* head);
+void PrintNode(node* head);
+void Print_Reverse(Link head, int count);
+int Count_data(Link head);
+void Print_Mid(Link list_head, int count);
+void removenode(node *target);
+void Delete_Rest(Link head, Link cur, int count);
