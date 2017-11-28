@@ -9,7 +9,7 @@ node *CreatNode(int *data,int *count)
 	node *cur;
 	cur=(node*)malloc(sizeof(node));
 	if(cur==NULL){
-		retrun NULL;
+		return NULL;
 	}
 	cur->value=data;
 	cur->next=NULL;
