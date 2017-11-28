@@ -83,14 +83,14 @@ void Print_Mid(Link list_head, int count) {
         }
 }
 
-//remove the node
+
 void removenode(Link target)
 {
         node *removenode = target->next;
         target->next = removenode->next;
         free(removenode);
 }
-//remove the even linked list content
+
 void Delete_Odd(Link head, Link cur, int count)
 {
         cur = head;
