@@ -6,10 +6,10 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-typedef struct {
+ struct node {
 	int value;
         struct node *next;
-}node;
+};
 
 typedef struct node Node;
 typedef Node* Link;
