@@ -19,7 +19,6 @@ int main(){
 		cur=CreatNode(data, &count);
 		head=AddNode(cur,head);
 	}
-<<<<<<< HEAD
 	puts("1. 입력된 리스트 -------------------------------------");
 	PrintNode(head);
 	puts("2. 입력된 리스트 역순-------------------------------------");
@@ -29,14 +28,6 @@ int main(){
 	puts("4. 홀수 번째 노드 삭제-------------------------------------");
 	cur=head;
 	Delete_Odd(&head, count);
-=======
-	Count_data(head);
-	Print_Reverse(head, count);
-	Print_Mid(head, count);
-	PrintNode(head);
-	cur=head;
-	Delete_Odd(head, cur, count);
->>>>>>> e0b4ee59a7887bf481124c5c775dfb3c6445f95a
 	PrintNode(head);
 	return 0;
 }
