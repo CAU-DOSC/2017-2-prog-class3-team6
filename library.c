@@ -58,3 +58,27 @@ int Count_data(Link head) {
 	return count;
 }
 
+void Print_Mid(Link list_head, int count) {
+	int cnt = count/2;
+	
+	if(count%2 == 1)
+	{
+		while(cnt>0)
+		{
+			list_head = list_head->next;
+			cnt--;
+		}
+		printf("%d\n", list_head->value);
+	}
+	else
+	{
+		while(cnt>1)
+		{
+			list_head = list_head->next;
+			cnt--;
+		}
+		printf("%d", list_head->next);
+		list_head = list_head->next;
+		printf(", %d\n",list_head->value);
+	}
+}
