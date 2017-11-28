@@ -83,14 +83,54 @@ void Print_Mid(Link list_head, int count) {
         }
 }
 
+void Delete_OddNode(Link* loc, int count) {
+        Node** hptr = loc;
+        Link target = *hptr;
+        Link cur = target->next;
+        *hptr = cur;
+        free(target);
+        // 연결 리스트 개수가 홀, 짝일때 반복문 조건이 달라짐 (직접 그려보면 안다)
+        if (count % 2 == 0) {
+                while (cur->next != NULL) {
+                        target = cur->next;
+                        cur->next = target->next;
+                        cur = cur->next;
+                        free(target);
+                }
+        }
+        else {
+                while (cur != NULL) {
+                        target = cur->next;
+                        cur->next = target->next;
+                        cur = cur->next;
+                        free(target);
+                }
+        }
+}
 
+// 남은 자료를 순서대로 삭제
+void Delete_Rest(Link *head) {
+
+        Link* start = head;
+        Link cur = *start;
+
+        while (cur != NULL) {
+                Link tmp = cur;
+                cur = cur->next;
+                *start = cur;
+                free(tmp);
+        }
+
+}
+/*
+//remove the node
 void removenode(Link target)
 {
         node *removenode = target->next;
         target->next = removenode->next;
         free(removenode);
 }
-
+//remove the even linked list content
 void Delete_Odd(Link head, Link cur, int count)
 {
         cur = head;
@@ -107,3 +147,4 @@ void Delete_Odd(Link head, Link cur, int count)
                 }
         }
 }
+*/
