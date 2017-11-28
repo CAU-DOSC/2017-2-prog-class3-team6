@@ -6,6 +6,9 @@
 
 #include"header.h"
 
+/* test
+ */
+
 int main(){
 	node *head=NULL;
 	node *cur=NULL;
