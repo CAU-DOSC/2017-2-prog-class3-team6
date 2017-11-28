@@ -82,3 +82,27 @@ void Print_Mid(Link list_head, int count) {
 		printf(", %d\n",list_head->value);
 	}
 }
+//remove the node
+void removenode(node *target)
+{
+	node *removenode = target->next;
+	target->next = removenode->next;
+	free(removenode);
+}
+//remove the even linked list content
+void Delete_Rest(Link head, Link cur)
+{
+	cur = head;
+	if (count % 2 == 1) {
+		while (cur != NULL) {
+			removenode(cur);
+			cur = cur->next;
+		}
+	}
+	else {
+		for (int i = 0; i < (count - 1) / 2; i++) {
+			removenode(cur);
+			cur = cur->next;
+		}
+	}
+}
