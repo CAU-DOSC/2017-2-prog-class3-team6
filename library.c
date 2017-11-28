@@ -77,7 +77,7 @@ void Print_Mid(Link list_head, int count) {
 			list_head = list_head->next;
 			cnt--;
 		}
-		printf("%d", list_head->next);
+		printf("%d", list_head->value);
 		list_head = list_head->next;
 		printf(", %d\n",list_head->value);
 	}
