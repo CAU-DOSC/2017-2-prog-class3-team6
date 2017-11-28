@@ -12,7 +12,7 @@ Your description start form next line and do not delete lines upto this point.
 node에 값을 넣는 함수         -->이지호
 새로운 node를 추가하는 함수   -->이지호
 node를 역순으로 출력하는 함수 -->고재원
-중간값을 출력하는 함수
+중간값을 출력하는 함수        -->이윤주
 node를 정순으로 출력하는 함수 -->이지호
 node를 홀수번째 삭제하는 함수
 
