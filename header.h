@@ -21,4 +21,5 @@ void Print_Reverse(Link head, int count);
 int Count_data(Link head);
 void Print_Mid(Link list_head, int count);
 void removenode(Link target);
-void Delete_Odd(Link head, Link cur, int count);
+void Delete_Odd(Link* head,int count);
+void Delete_Rest(Link *head);

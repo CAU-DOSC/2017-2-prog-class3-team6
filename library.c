@@ -83,7 +83,7 @@ void Print_Mid(Link list_head, int count) {
         }
 }
 
-void Delete_OddNode(Link* loc, int count) {
+void Delete_Odd(Link* loc, int count) {
         Node** hptr = loc;
         Link target = *hptr;
         Link cur = target->next;
