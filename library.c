@@ -91,7 +91,7 @@ void removenode(node *target)
 	free(removenode);
 }
 //remove the even linked list content
-void Delete_Rest(Link head, Link cur, int count)
+void Delete_Odd(Link head, Link cur, int count)
 {
 	cur = head;
 	if (count % 2 == 1) {
