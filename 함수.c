@@ -44,3 +44,52 @@ void swap(char *str1, int i1, int i2, int d) {
 		str1[i2 + i] = temp;
 	}
 }
+
+
+void blockswap(char *str, int d, int n)
+	
+{
+	if (d == 0 || d == n) {//
+		return;
+	}
+	if (n - d == d)
+	{
+		swap(str, 0, n - d, d);//
+		return;//
+	}
+	if (d < n - d)
+	{
+		swap(str, 0, n - d, d);
+		blockswap(str, d, n - d);
+	}
+	else
+	{
+		swap(str, 0, d, n - d);
+		//
+		blockswap(str + n - d, (2 * d) - n, d);
+	}
+}
+void reverse(char *str1, int a, int b) {
+	char temp;
+	for (int i = 0; i < (b - a) / 2; i++) {
+		temp = str1[a + i];
+		
+		str1[a + i] = str1[b - i];
+		str1[b - i] = temp;
+	}
+}
+void reversal(char *str1) {
+	reverse(str1, 0, d - 1);
+	reverse(str1, d, n - 1);
+	
+	reverse(str1, 0, n - 1);
+	
+}
+void printhead() {
+	
+	printf("StrLength\tRotateDistance\tT.trivial\tT.juggle\tT.bw\t\tT.reverse\t\n");
+}
+void printresult(){
+	
+	printf("%d\t\t%d\t\t%lf\t%lf\t%lf\t%lf\n", n, d, time1, time2, time3, time4);
+}
