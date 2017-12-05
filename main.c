@@ -19,15 +19,16 @@ int main(){
 		cur=CreatNode(data, &count);
 		head=AddNode(cur,head);
 	}
-	puts("1. 입력된 리스트 -------------------------------------");
+	puts("\n1. 입력된 리스트");
 	PrintNode(head);
-	puts("2. 입력된 리스트 역순-------------------------------------");
+	puts("\n2. 입력된 리스트 역순");
 	Print_Reverse(head, count);
-	puts("3. 중간 값-------------------------------------");
+	puts("\n3. 중간 값");
 	Print_Mid(head, count);
-	puts("4. 홀수 번째 노드 삭제-------------------------------------");
+	puts("\n4. 홀수 번째 노드 삭제");
 	cur=head;
 	Delete_Odd(&head, count);
 	PrintNode(head);
+	printf("\n");
 	return 0;
 }
